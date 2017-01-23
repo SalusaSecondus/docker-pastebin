@@ -7,7 +7,7 @@
 
   "maxLength": 400000,
 
-  "staticMaxAge": 86400,
+  "staticMaxAge": 8640000,
 
   "recompressStaticAssets": true,
 
@@ -21,6 +21,15 @@
 
   "keyGenerator": {
     "type": "random"
+  },
+
+  "rateLimits": {
+    "categories": {
+      "normal": {
+        "totalRequests": 5000,
+        "every": 6
+      }
+    }
   },
 
   "storage": {
